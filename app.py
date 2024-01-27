@@ -19,8 +19,7 @@ yt = YouTube(inp)
 def _inp(title, views):
     title = yt.title
     views = yt.views
-
-print("Title : " ,title , "Views : " ,views)
+    print("Title : " ,title , "Views : " ,views)
 
 #Get the video resoluction
 yr = yt.streams.get_highest_resolution()
