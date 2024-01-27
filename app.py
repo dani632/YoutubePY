@@ -10,12 +10,15 @@ if len(argv) > 1:
 else:
     path = "/Users/ADMIN/Documents"
 
-#Add the YouTube video link
-yt = YouTube('https://youtu.be/vEQ8CXFWLZU')
+#Add the an input field for YouTube video link
 
-title = yt.title
+inp = input()
 
-views = yt.views
+yt = YouTube(inp)
+
+def _inp(title, views):
+    title = yt.title
+    views = yt.views
 
 print("Title : " ,title , "Views : " ,views)
 
